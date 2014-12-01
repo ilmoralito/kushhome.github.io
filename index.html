@@ -1,23 +1,72 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>kushhome</title>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body {
+			background:#3A3D48;
+			font-family: Sans-Serif;
+			color:#FFF;
+		}
 
-<div class="home">
+		.container img {
+			display:block;
+			margin:auto;
+			width: 25%;
+    	height: auto;
+		}
 
-  <h1 class="page-heading">Posts</h1>
+		.well {
+			color:#444;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="https://d13yacurqjgara.cloudfront.net/users/95862/screenshots/1396967/defensemobile_1x.jpg" alt="">
+				<h3>Aqui estamos construyendo kushhome</h3>
+			</div>
+		</div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+		<div class="row">
+			<div class="col-md-4">
+				<h4>uno</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex necessitatibus rem sequi, ab nihil ratione reprehenderit quasi aspernatur, recusandae blanditiis, sapiente incidunt. Numquam iusto hic, sapiente corporis! Beatae, molestias! Delectus.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>Pronto</h4>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur repellat totam, repudiandae beatae tempora, atque eos iure fugiat doloribus sequi ducimus optio incidunt quo, impedit, ipsa possimus maiores obcaecati dolorum.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<h4>Actividad del aniversarion</h4>
+				<p>
+					Kush Bar se pone de manteles largos para celebrar con toda la raza que apoya la nota y trayéndoles siempre la mejor musica en vivo para gozar del mero tripeo asi que no se lo pierdan vengan a calentar esas gargantas y demuestren su amor Mariano para la gritería.
+				</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+				<div class="well well-sm">
+					Fecha: Sábado 6 de Diciembre 2014 <br>
+					Lugar: Kush Bar, León Nicaragua <br>
+					Cover: C$80
+				</div>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+				<p>Con la participación espacial de:</p>
 
-</div>
+				<ul>
+					<li><a href="https://www.facebook.com/trescoloresnicaragua?fref=ts">@tres colores</a></li>
+					<li><a href="https://www.facebook.com/CalijahReggae?fref=ts">Cal I Jah</a></li>
+					<li><a href="https://www.facebook.com/TheCamelsNicaragua?fref=ts">The Camels</a></li>
+					<li>DJ Heny Green</li>
+					</ul>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
